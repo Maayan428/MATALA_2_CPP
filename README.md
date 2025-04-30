@@ -1,4 +1,4 @@
-# SquareMat Project
+# SquareMat Project:
 
 **Name:** Maayan Turgeman
 **ID:** 209948058
@@ -7,7 +7,14 @@
 ---
 
 ## Description
-This project implements a **Square Matrix (`SquareMat`)** class in C++ using raw dynamic memory (without STL containers) and **operator overloading**. It includes a full test suite with the `doctest` framework.
+This project implements a class called **`SquareMat`** for working with square matrices of real numbers in C++. 
+The implementation uses **dynamic memory allocation** with raw pointers (no `vector`, `array` or any other STL containers allowed), and demonstrates in-depth use of **operator overloading** in C++. 
+
+The class supports arithmetic operations (addition, subtraction, multiplication, scalar operations), logic and comparison operators, access via index notation, and advanced features like **transpose**, **matrix exponentiation**, and **determinant calculation** using recursion with minor extraction. 
+
+All functionalities were implemented from scratch, including memory management (with `new` and `delete`), exception handling, and input validation. 
+
+In addition, the project includes a **full set of unit tests** using the [`doctest`](https://github.com/doctest/doctest) framework to validate correctness and edge cases, and it passed memory checks via **Valgrind**.
 
 ---
 
@@ -15,15 +22,16 @@ This project implements a **Square Matrix (`SquareMat`)** class in C++ using raw
 
 | File             | Description |
 |------------------|-------------|
-| `SquareMat.hpp/cpp` | Class definition and implementation of all the `SquareMat` operators and functions, as well as helper methods and memory management. |
-| `main.cpp`           | Demo program that demonstrates all the functionalities of the matrix class. |
-| `Test.cpp`           | Unit tests validating all functionalities work well, using `doctest`. |
-| `doctest.h`          | Header of a testing framework (version 2.4.12). |
-| `Makefile`           | Build automation: compile, run, test, valgrind, and clean. |
+| `SquareMat.hpp`      | Header file that defines the `SquareMat` class, its methods, and the overloaded operators. |
+| `SquareMat.cpp`      | Implements all the logic of the `SquareMat` class, including operator overloading and helper methods. |
+| `main.cpp`           | Demonstrates how to create and manipulate square matrices using all the supported operations. |
+| `Test.cpp`           | Contains a comprehensive suite of unit tests using the `doctest` framework, covering edge cases and expected behavior. |
+| `doctest.h`          | The testing framework used to write and run all the unit tests. Header-only and included locally. |
+| `Makefile`           | Allows building the demo (`Main`), running tests (`Test`), checking for memory leaks (via `valgrind`), and cleaning up build files. |
 
 ---
 
-## How to Use
+## How to Use:
 
 ### Build and Run Demo:
 ```bash
@@ -48,5 +56,6 @@ make clean
 
 ---
 
-## Environment
-Compiled and tested on Ubuntu 24.04 (Mac Parallels VM), with g++ 11.
+## Environment:
+Compiled and tested on **Ubuntu 24.04 (running in Parallels on Mac)** with **g++ 11** and `make`. 
+Valgrind version used: `3.22.0`
