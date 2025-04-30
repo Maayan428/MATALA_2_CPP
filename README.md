@@ -15,12 +15,11 @@ This project implements a **Square Matrix (`SquareMat`)** class in C++ using raw
 
 | File             | Description |
 |------------------|-------------|
-| `SquareMat.hpp/cpp` | Class definition and implementation of `SquareMat`, including operator overloading, helper methods, and memory management. |
-| `main.cpp`           | Demo program that demonstrates all functionality of the matrix class. |
-| `Test.cpp`           | Unit tests validating all public functionality using `doctest`. |
-| `doctest.h`          | Header-only testing framework (version 2.4.12). |
-| `Makefile`           | Build automation: compile, run, test, valgrind, and cleanup. |
-| `submission.txt`     | Required file for Moodle submission (ID, GitHub link, commit hash). |
+| `SquareMat.hpp/cpp` | Class definition and implementation of all the `SquareMat` operators and functions, as well as helper methods and memory management. |
+| `main.cpp`           | Demo program that demonstrates all the functionalities of the matrix class. |
+| `Test.cpp`           | Unit tests validating all functionalities work well, using `doctest`. |
+| `doctest.h`          | Header of a testing framework (version 2.4.12). |
+| `Makefile`           | Build automation: compile, run, test, valgrind, and clean. |
 
 ---
 
