@@ -1,8 +1,8 @@
 # SquareMat Project
 
-**Name:**: Maayan Turgeman
-**ID**: 209948058
-**Email**: maayan428@gmail.com
+**Name:** Maayan Turgeman
+**ID:** 209948058
+**Email:** maayan428@gmail.com
 
 ---
 
